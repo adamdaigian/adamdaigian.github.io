@@ -59,11 +59,13 @@
   font-family: Open Sans;
   color: #fff;
   text-shadow: 0 1px 1px rgba(14,21,58,0.2);
+  font-size: 40px;
 }
 
 #intro h3 {
   color: #0684b4;
   text-shadow: 0 1px 1px rgba(14,21,58,0.2);
+  font-size: 16px;
 }
 
 .profile-block {
@@ -78,13 +80,27 @@
   overflow: hidden;
 }
 
+.block-0,
 .block-1 {
   background: #f5f7f9;
+}
+
+.block-0 {
+  margin-top: -30px;
+  padding: 10px 0px 70px 0px;
 }
 
 .elasticbox .logo {
   width: 260px;
   margin: 50px auto;
+}
+
+.elasticbox .lead {
+  font-size: 16px;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  color: #66757f; 
 }
 
 .elasticbox .workplace {
@@ -100,7 +116,7 @@
 }
 
 .elasticbox ul.functions {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   font-style: italic;
   color: #66757f;
