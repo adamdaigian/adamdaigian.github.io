@@ -35,7 +35,7 @@
   text-shadow: 0 1px 0 #10354a;
   background: #154866;
   background: radial-gradient(circle farthest-side at right bottom,#fff 8%,#154866 70%,#000);
-  height: 460px;
+  height: 580px;
   overflow: hidden;
 }
 
@@ -56,28 +56,40 @@
 
 #intro h1 {
   margin-top: 160px;
-  font-family: Open Sans;
+/*  font-family: adelle, sans-serif;*/
+  font-style: normal;
+  font-weight: 300;
   color: #fff;
   text-shadow: 0 1px 1px rgba(14,21,58,0.2);
-  font-size: 40px;
+  font-size: 24px;
 }
 
 #intro h3 {
-  color: #0684b4;
+  color: #fff;
   text-shadow: 0 1px 1px rgba(14,21,58,0.2);
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .profile-block {
   width: 375px;
   height: 786px;
-  margin-top: 70px;
   margin-left: 60px;
+  margin-top: 100px;
   background: transparent;
   background-image: url('https://stripe.com/img/checkout/marketing/header-animation/mobile-flow/iphone5s.png');
   background-size: 80%;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.profile-details {
+  background-image: url('https://s3-us-west-1.amazonaws.com/adamdaigian/adam_about_placeholder.jpg');
+  background-size: 73%;
+  background-repeat: no-repeat;
+  margin-top: 88px;
+  margin-left: 23px;
+  height: 400px;
 }
 
 .block-0,
@@ -129,4 +141,37 @@
 
 .container-hola {
   padding-top: 100px;
+}
+
+p.lead,
+p,
+body,
+h3 {
+  font-family: proxima-nova, sans-serif;
+}
+
+h1,
+h1.title,
+h2.title,
+h3.title {
+/*  font-family: adelle, sans-serif;*/
+  font-weight: 100;
+}
+
+.resume {
+  position: relative;
+  text-shadow: 0 1px 0 #10354a;
+  background: #154866;
+  background: radial-gradient(circle farthest-side at left bottom,#fff 8%,#154866 70%,#000);
+  height: 300px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.resume .lead {
+  color: #fff;
+}
+
+.resume .btn-resume {
+  margin: 20px auto;
 }
