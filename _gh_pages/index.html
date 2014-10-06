@@ -19,7 +19,6 @@
 <link href="dist/css/animate.css" rel="stylesheet">
 <link href="dist/css/style.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Ubuntu|Monda:400,700|Inconsolata|Open+Sans:300,400,600.700,800' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="dist/js/eb.js"></script>
 <script src="//use.typekit.net/enn6hcw.js"></script>
@@ -56,8 +55,6 @@
 
 
     <link rel="stylesheet" media="screen, projection" href="dist/css/home.css">
-    <script src="dist/js/vendor.js"></script>
-    <script src="dist/js/home.js"></script>
   </head>
   <body class="">
 
@@ -77,8 +74,18 @@
       <ul class="nav navbar-nav">
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="">Expo</a></li>
-        <li><a href="">Blog</a></li>
+        <li class="hex-nav">
+          <div class="hexagon" id="hex-1"></div>
+          <a href=""><i class="hex-fa fa fa-linkedin fa-lg" id="fa-0"></i></a>
+        </li>
+        <li class="hex-nav">
+          <div class="hexagon" id="hex-2"></div>
+          <a href=""><i class="hex-fa fa fa-twitter fa-lg" id="fa-1"></i></a>
+        </li>
+        <li class="hex-nav">
+          <div class="hexagon" id="hex-3"></div>
+          <a href=""><i class="hex-fa fa fa-github fa-lg" id="fa-2"></i></a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -89,8 +96,10 @@
     <main class="jumbotron" id="intro" role="main">
   <div class="container">
     <div class="col-lg-4 col-lg-offset-2 transition title-block">    
-      <h1 class="title">My Name Is Adam</h1>
-      <h3 class="lead">I'm just another Tech-Bro living in San Francisco. I do product and growth at startups and midsize enterprises and help them lay the groundwork for scaling. When I'm not benind computer screens, I'm surfing, riding a motorcycle or living 100% awesomely.</h3>
+      <h1 class="title">Hello, My Name Is Adam</h1>
+      <h3 class="lead">I'm just another Tech-Bro living in San Francisco. I do product and growth at startups, focusing on customer acquistion and building sustainable growth channels. When I'm not benind computer screens, I'm surfing, riding a motorcycle or just trying to be 100% awesome.</h3>
+      <hr class="short"></hr>
+      <p class="sub-lead">Want to skip the rest of this bs and just checkout my <a href="">resume</a>?</p>
     </div>
     <div class="col-lg-5 transition">
       <div class="profile-block">
@@ -127,84 +136,42 @@
   <div class="container container-hola elasticbox">
     <div class="row">
       <img class="img-responsive logo" src="http://static.elasticbox.com.s3-us-west-1.amazonaws.com/elasticbox-logo-old.svg"></img>
-      <p class="lead">ElastixBox makes delivering applications and services to the cloud faster than ever before. There, I worked as a Growth PM on everything from customer acquisition to marketing automation to build a scalable growth machine.</p>
+      <p class="lead">Most recently I worked at ElastixBox, which makes delivering applications and services to any cloud provider fast and seamless. There, I worked as a Growth Product Manager where I helped launch ElasticBox to the public, acquire it's first users and lay the groundwork for month over month growth.</p>
     </div>
   </div>
 </section>
 <section class="resume">
-  <div class="container">
-    <h3 class="lead text-center">Already think I'm a Badass? You're probably wondering what my other experince looks like.</h3>
+  <div class="container text-center">
+    <h3 class="lead">Already think I'm a Badass? You're probably wondering what my other experince looks like.</h3>
     <button class="btn btn-lrg btn-primary btn-resume">View Resume</button>
+  </div>
+</section>
+<section class="showcase">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4"><p class="text-center">Hola Hola Hola Hola Hola Hola Hola Hola Hola Hola Hola Hola</p></div>
+      <div class="col-lg-4"><p class="text-center">Hola Hola Hola Hola Hola Hola Hola Hola Hola Hola Hola Hola</p></div>
+      <div class="col-lg-4"><p class="text-center">Hola Hola Hola Hola Hola Hola Hola Hola Hola Hola Hola Hola</p></div>
+    </div>
   </div>
 </section>
 
 
     <!-- Footer and Other Javascript. -->
-    <footer class="bs-footer" role="contentinfo">
- 
+    <footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="col-lg-4">
+      <ul>
+        <li>Hola</li>
+        <li>Hola</li>
+        <li>Hola</li>
+        <li>Hola</li>
+      </ul>
+    </div>
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4"></div>
+  </div>
 </footer>
-
-    <script type="javascript">
-  $('#sign-up-modal').modal('show');
-</script>
-
-<div id="sign-up-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="#sign-up-modal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content signup-form">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3 class="modal-title text-center" id="myModalLabel">SIGN UP</h3>
-      </div>
-      <div class="modal-header sub-header">
-        <h4 class="text-center">Try the free Developer Edition. Deploy an application and get a free t-shirt.</h4>
-      </div>
-      <div class="modal-body">
-        <script>
-          $(document).ready(function() {    
-            $('#email-signup').click(function () { 
-              $('#github-signup').hide()
-              $('#google-signup').hide()
-              $('#email-signup').hide()
-              $('.divider').hide()
-              $('#signup-form').show()
-            });
-          });
-        </script>
-        <button type="button" class="btn btn-lg btn-primary btn-block btn-modal" id="github-signup" href="">
-          <i class="fa fa-github" id="small-github-icon"></i>
-          <span class="">SIGN UP WITH GITHUB</span>
-        </button>
-        <button type="button" class="btn btn-lg btn-google btn-block btn-modal" id="google-signup" href="">
-          <i class="fa fa-google-plus" id="small-github-icon"></i>
-          <span class="">SIGN UP WITH GOOGLE</span>
-        </button>
-        <span class="divider">Or</span>
-        <button type="button" class="btn btn-lg btn-email btn-block btn-modal" id="email-signup" href="">
-          <span class="">SIGN UP WITH EMAIL</span>
-        </button>
-        <form role="form" id="signup-form" style="display:none;">
-          <div class="form-group">
-            <label class="text-muted" or="exampleInputEmail1">Full Name <span class="required-form">*</span></label>
-            <input type="email" class="form-control input-lg" id="exampleInputEmail1">
-          </div>
-          <div class="form-group">
-            <label class="text-muted" for="exampleInputPassword1">Work Email <span class="required-form">*</span></label>
-            <input type="password" class="form-control input-lg" id="exampleInputPassword1">
-          </div>
-          <div class="form-group">
-            <label class="text-muted" for="exampleInputPassword1">Password <span class="required-form">*</span></label>
-            <input type="password" class="form-control input-lg" id="exampleInputPassword1">
-          </div>
-          <button class="btn btn-lg btn-primary btn-block" id="email-complete">LET'S GO!</button>
-        </form>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-block btn-primary">LETS GO!</button>
-      </div> -->
-      <p class="tos text-muted text-center">By signing up you agree to ElasticBox's <br><a href="terms-of-service">terms of service</a
-
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
 
   </body>
