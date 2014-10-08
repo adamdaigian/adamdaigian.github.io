@@ -31,14 +31,35 @@ a.navbar-brand:hover {
   /* add slash at the end of line to see the rhombus *
   outline: solid 1px red;/**/
   width: 3em; height: 3em;
-  transform: rotate(-30deg) skewX(30deg) scaleY(.866);
+  -webkit-transform: rotate(-30deg) skewX(30deg) scaleY(.866);
   margin-right: 18px;
   top: 7px;
 }
+
 .hexagon:before {
   position: absolute;
   right: 6.7%; bottom: 0; left: 6.7%; top: 0;
-  transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+  -webkit-transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
+  background: #154866;
+  color: #154866;
+  font: 1em/10 Verdana, sans-serif;
+  text-align: center;
+  content: 'none';
+}
+
+.hex-footer {
+   position: relative;
+   overflow: hidden;
+  /* add slash at the end of line to see the rhombus *
+  outline: solid 1px red;/**/
+  width: 2.2em; height: 2.2em;
+  -webkit-transform: rotate(-30deg) skewX(30deg) scaleY(.866);
+}
+
+.hex-footer:before {
+  position: absolute;
+  right: 6.7%; bottom: 0; left: 6.7%; top: 0;
+  -webkit-transform: scaleY(1.155) skewX(-30deg) rotate(30deg);
   background: #154866;
   color: #154866;
   font: 1em/10 Verdana, sans-serif;
@@ -58,12 +79,12 @@ a.navbar-brand:hover {
   left: -120px;
 }
 
-.hexagon:hover:before {
+/*.hexagon:hover:before {
   background: #FFF;
-  color: #FFF;
-}
+  color: #154866;
+}*/
 
-.fa {
+.hex-fa {
   color: #fff;
   position: absolute;
   top: 22px;
@@ -107,17 +128,14 @@ a.navbar-brand:hover {
   background-color: transparent;
 }
 
+
 #intro {
   position: relative;
   text-shadow: 0 1px 0 #10354a;
   background: #154866;
   background: radial-gradient(circle farthest-side at right bottom,#fff 8%,#154866 70%,#000);
-  height: 580px;
+  height: 610px;
   overflow: hidden;
-}
-
-.show {
-  background: #fff;
 }
 
 .transition {    
@@ -129,6 +147,7 @@ a.navbar-brand:hover {
 
 .title-block {
   background: transparent;
+  left: 30px;
 }
 
 #intro h1 {
@@ -149,24 +168,26 @@ a.navbar-brand:hover {
 }
 
 .profile-block {
-  width: 375px;
+  width: 463px;
   height: 786px;
   margin-left: 60px;
-  margin-top: 100px;
+  margin-top: 60px;
   background: transparent;
   background-image: url('https://stripe.com/img/checkout/marketing/header-animation/mobile-flow/iphone5s.png');
   background-size: 80%;
   background-repeat: no-repeat;
-  overflow: hidden;
+  position: absolute;
 }
 
 .profile-details {
-  background-image: url('https://s3-us-west-1.amazonaws.com/adamdaigian/adam_about_placeholder.jpg');
-  background-size: 73%;
+  background-image: url('https://s3-us-west-1.amazonaws.com/adamdaigian/adam_about_placeholder_flat.png');
+  background-size: 100%;
+  position: relative;
   background-repeat: no-repeat;
-  margin-top: 88px;
-  margin-left: 23px;
-  height: 400px;
+  margin-top: 108px;
+  margin-left: 28px;
+  height: 100%;
+  width: 317px;
 }
 
 .block-0,
@@ -193,19 +214,19 @@ a.navbar-brand:hover {
 }
 
 .elasticbox .workplace {
-  width: 340px;
-  margin-left: 35px;
-  margin-top: 125px;
-  margin-bottom: -33px;
+  width: 360px;
+  margin-left: -15px;
+  margin-top: 25px;
+  margin-bottom: -34px;
 }
 
 .elasticbox .description {
-  margin: 160px 0 0 50px;
+  margin: 56px 0 0 -10px;
   color: #292f33;
 }
 
 .elasticbox ul.functions {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   font-style: italic;
   color: #66757f;
@@ -228,8 +249,8 @@ a.navbar-brand:hover {
 }
 
 .container-hola {
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 120px;
 }
 
 p.lead,
@@ -278,13 +299,121 @@ a:hover {
 }
 
 .footer {
-  background-color: #154866;
+  background-color: #efefef;
+  padding-top: 40px;
+}
+
+ul.hex-list > li {
+  list-style: none;
+  padding-bottom: 0px;
+  height: 44px;
+}
+
+.fa-footer {
+  left: 10px;
+  top: -26px;
+  position: relative;
+  color: #fff;
+}
+
+.footer-hex-text {
+  position: relative;
+  left: 50px;
+  top: -47px;
 }
 
 .blue {
   color: #154866;
 }
 
-.white {
+.hexagon.white {
   color: #fff;
 }
+
+/*HEX SECTION*/
+
+/* Thanks to dmac37 for this hex technique */
+
+.showcase {
+  margin: 0 auto;
+  text-align: center;
+  width: 960px;
+}
+
+.hex_row_even {
+  display: inline-block;
+  margin: 0 auto -275px auto;
+  overflow: hidden;
+}
+
+.hex_row_odd {
+  display: inline-block;
+  margin: 0 auto -275px auto;
+  overflow: hidden;
+}
+
+.center {
+  float: left;
+  margin: 20px 10px;
+  width: 220px;
+}
+
+.hexagon-grid {
+  -webkit-transform: rotate 120deg;
+  cursor: pointer;
+  height: 440px;
+  overflow: hidden;
+  visibility: hidden;
+  width: 220px;
+}
+
+.hex1 {
+  -webkit-transform: rotate(-60deg);
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hex2 {
+  -webkit-transform: rotate(-60deg);
+  height: 100%;
+  /*@include background-size(($width + ($width * .20)) ($width + ($width * .20)));
+  background-position: 50%;*/
+  position: relative;
+  visibility: visible;
+  width: 100%;
+}
+
+.desc {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  height: 440px;
+  line-height: 1.5em;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  visibility: visible;
+  width: 220px;
+}
+.desc.base {
+  background: rgba(230, 0, 98, 0.75);
+}
+.desc.one {
+  background: rgba(252, 171, 55, 0.75);
+}
+.desc.two {
+  background: rgba(169, 160, 50, 0.75);
+}
+.desc.three {
+  background: rgba(83, 70, 54, 0.75);
+}
+.desc h2 {
+  margin: 165px 20px 0 20px;
+}
+.desc p {
+  font-size: .5em;
+  text-transform: lowercase;
+}
+
