@@ -111,6 +111,8 @@ a.navbar-brand:hover {
   width: 80%;
   font-size: 14px;
   clear: both;
+  font-family: 'proxima-nova' sans-serif;
+  font-weight: 100;
 }
 
 .short {
@@ -154,7 +156,7 @@ a.navbar-brand:hover {
   margin-top: 160px;
   font-family: adelle, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   color: #fff;
   text-shadow: 0 1px 0 #10354a;
   font-size: 24px;
@@ -165,6 +167,8 @@ a.navbar-brand:hover {
   text-shadow: 0 1px 0 #10354a;
   font-size: 18px;
   line-height: 28px;
+  font-family: 'proxima-nova' sans-serif;
+  font-weight: 100;
 }
 
 .profile-block {
@@ -227,7 +231,7 @@ a.navbar-brand:hover {
 
 .elasticbox .description > h3.title {
   font-family: 'adelle' sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .elasticbox ul.functions {
