@@ -226,7 +226,8 @@ a:hover {
 
 .block-0,
 .block-1 {
-  background: #f5f7f9;
+  /*background: #f5f7f9;*/
+  background-color: #f2f6fa;
 }
 
 .block-0 {
@@ -322,7 +323,8 @@ a:hover {
 }
 
 .footer {
-  background-color: #f5f7f9;
+/*  background-color: #f5f7f9;*/
+  background-color: #f2f6fa;
   padding-top: 40px;
 }
 
@@ -360,6 +362,21 @@ ul.hex-list > li {
   text-align: left;
   width: 80%;
   line-height: 1.8;
+  margin-top: -6px;
+}
+
+.footer-image {
+  width: 170px;
+  margin-top: 16px;
+  margin-left: 80px;
+  height: 100%;
+  background-size: 100%;
+}
+
+.footer-base {
+  border-top: 2px solid #dfe9f3;
+  padding-bottom: 40px;
+  margin-top: -1px;
 }
 
 .blue {
