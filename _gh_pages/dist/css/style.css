@@ -152,7 +152,7 @@ a.navbar-brand:hover {
 
 #intro h1 {
   margin-top: 160px;
-/*  font-family: adelle, sans-serif;*/
+  font-family: adelle, sans-serif;
   font-style: normal;
   font-weight: 300;
   color: #fff;
@@ -225,9 +225,13 @@ a.navbar-brand:hover {
   color: #292f33;
 }
 
+.elasticbox .description > h3.title {
+  font-family: 'adelle' sans-serif;
+  font-weight: 300;
+}
+
 .elasticbox ul.functions {
   font-size: 18px;
-  font-weight: 300;
   font-style: italic;
   color: #66757f;
 }
@@ -236,6 +240,8 @@ a.navbar-brand:hover {
   letter-spacing: 1px;
   line-height: 1.6;
   list-style: none;
+  font-family: 'proxima-nova' sans-serif;
+  font-weight: 100;
 }
 
 .elasticbox ul.functions > li:before {
@@ -251,21 +257,6 @@ a.navbar-brand:hover {
 .container-hola {
   padding-top: 100px;
   padding-bottom: 120px;
-}
-
-p.lead,
-p,
-body,
-h3 {
-  font-family: proxima-nova, sans-serif;
-}
-
-h1,
-h1.title,
-h2.title,
-h3.title {
-/*  font-family: adelle, sans-serif;*/
-  font-weight: 100;
 }
 
 a {
@@ -299,7 +290,7 @@ a:hover {
 }
 
 .footer {
-  background-color: #efefef;
+  background-color: #f5f7f9;
   padding-top: 40px;
 }
 
@@ -328,92 +319,5 @@ ul.hex-list > li {
 
 .hexagon.white {
   color: #fff;
-}
-
-/*HEX SECTION*/
-
-/* Thanks to dmac37 for this hex technique */
-
-.showcase {
-  margin: 0 auto;
-  text-align: center;
-  width: 960px;
-}
-
-.hex_row_even {
-  display: inline-block;
-  margin: 0 auto -275px auto;
-  overflow: hidden;
-}
-
-.hex_row_odd {
-  display: inline-block;
-  margin: 0 auto -275px auto;
-  overflow: hidden;
-}
-
-.center {
-  float: left;
-  margin: 20px 10px;
-  width: 220px;
-}
-
-.hexagon-grid {
-  -webkit-transform: rotate 120deg;
-  cursor: pointer;
-  height: 440px;
-  overflow: hidden;
-  visibility: hidden;
-  width: 220px;
-}
-
-.hex1 {
-  -webkit-transform: rotate(-60deg);
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
-}
-
-.hex2 {
-  -webkit-transform: rotate(-60deg);
-  height: 100%;
-  /*@include background-size(($width + ($width * .20)) ($width + ($width * .20)));
-  background-position: 50%;*/
-  position: relative;
-  visibility: visible;
-  width: 100%;
-}
-
-.desc {
-  color: white;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.5em;
-  font-weight: 300;
-  height: 440px;
-  line-height: 1.5em;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  visibility: visible;
-  width: 220px;
-}
-.desc.base {
-  background: rgba(230, 0, 98, 0.75);
-}
-.desc.one {
-  background: rgba(252, 171, 55, 0.75);
-}
-.desc.two {
-  background: rgba(169, 160, 50, 0.75);
-}
-.desc.three {
-  background: rgba(83, 70, 54, 0.75);
-}
-.desc h2 {
-  margin: 165px 20px 0 20px;
-}
-.desc p {
-  font-size: .5em;
-  text-transform: lowercase;
 }
 
