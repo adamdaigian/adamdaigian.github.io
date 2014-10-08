@@ -289,6 +289,11 @@ a:hover {
   top: -3px;
 }
 
+.elasticbox .lead {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .container-hola {
   padding-top: 100px;
   padding-bottom: 120px;
@@ -325,6 +330,7 @@ ul.hex-list > li {
   list-style: none;
   padding-bottom: 0px;
   height: 44px;
+  width: 20%;
 }
 
 .fa-footer {
@@ -343,6 +349,17 @@ ul.hex-list > li {
 .footer-hex-text {
   color: #154866;
   text-decoration: underline;
+}
+
+.title-footer {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.footer .lead {
+  text-align: left;
+  width: 80%;
+  line-height: 1.8;
 }
 
 .blue {
