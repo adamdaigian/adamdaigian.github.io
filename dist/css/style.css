@@ -426,10 +426,12 @@ ul.hex-list > li {
   cursor: pointer;
   vertical-align: bottom;
 }
+
 .fa-animated:hover {
   padding-top: 0px;
   padding-bottom: 30px;
 }
+
 .fa-animated::after {
   content : "";
   position: absolute;
@@ -446,10 +448,10 @@ ul.hex-list > li {
   transition: all 0.3s ease;
   border-radius: 90px;
 }
+
 .fa-animated:hover::after {
   left: 20%;
   right: 20%;
   width: 60%;
   border-bottom: 1px solid #154866;
 }
-
