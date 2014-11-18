@@ -248,6 +248,12 @@ a:hover {
   color: #66757f; 
 }
 
+.white {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .elasticbox .workplace {
   width: 360px;
   margin-left: -15px;
