@@ -102,7 +102,7 @@ module.exports = function(grunt) {
           // style: 'compressed'
         },
         files: {
-          'dist/css/home.css': 'src/css/home.scss'
+          'dist/css/style.css': 'src/css/style.scss'
         }
       }
     },
