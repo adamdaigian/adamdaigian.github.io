@@ -12,8 +12,8 @@
 <link href="/dist/css/style.css" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//use.typekit.net/enn6hcw.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<script src="https://use.typekit.net/enn6hcw.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 <!--[if lt IE 9]><script src="docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -36,23 +36,19 @@
   ga('send', 'pageview');
 </script>
 
-<!-- Mixpanel -->
-<script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-mixpanel.init("4273c2d8168867411eccd2942ed535fb");</script><!-- end Mixpanel -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js" charset="utf-8"></script>
   </head>
   <body class="resume">
     <!-- Page content of course! -->
-      <div style="height:100px;"></div>
+    <div style="height:100px;"></div>
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
 
       <!-- Title -->
 
-      <h1>Adam Daigian</h1>
-      <h4>Growth Product Manager & Engineer</h4>
+      <h1 class="resume-title">Adam Daigian</h1>
+      <h4>Product Manager & Hands On Builder</h4>
 
       <div style="height:20px;"></div>
 
@@ -79,9 +75,9 @@ mixpanel.init("4273c2d8168867411eccd2942ed535fb");</script><!-- end Mixpanel -->
   </div>
   <div class="row">
     <div class="col-lg-6">
-      <h5>Experience:</h5>
-      <hr>
-      <div style="height:10px;"></div>
+      <h5 class="title">Experience:</h5>
+      <hr class="bold">
+      <!-- <div style="height:10px;"></div> -->
       <!-- HoneyBook -->
 
       <h3>Senior Product Manager, Growth</h3>
@@ -96,24 +92,39 @@ mixpanel.init("4273c2d8168867411eccd2942ed535fb");</script><!-- end Mixpanel -->
       <span>San Francisco</span>
 
       <div style="height:10px;"></div>
-
-      <p>Owned all growth initiatives in product, marketing and engineering, working cross functionally to acheive aggressive business objectives.</p>
       <ul>
-        <li>Planned and shipped features facilitating growth such as collaboration, onboarding, Docker integration and all in-product analytics or tests.</li>
-        <li>Owned all analytics products (Mixpanel, Google Analytics and Hubspot) to drive roadmap, monitor health, customer success, and end-to-end analysis.</li>
-        <li>Owned the ElasticBox website as a product manager and developer and worked with the Ops team to manage the entire website lifecycle.</li>
+        <li>Launched three of HoneyBook's strongest acquisition channels (Referral, Invites, Ads) and scaled lead volume 10% - 20% MoM while accounting for 15% - 30% of MoM memership growth.</li>
+        <li>Ran A/B and Multivariate tests on website and langing page for 50% improvement in registration funnel and a 233% improvement in Referral registration.</li>
+        <li>Launched multiple growth product initiatives in onboarding for a 70% reduction in time to activation and a 1000% increase in login of users added inproduct.</li>
+        <li>Drove deep business insights in market sizing, inflection analysis, activation and churn analysis, transaction volumes and growth opportunties.</li>
+        <li>Signficant network product ideation, user reasearch and insight generation through one-on-on interviews, focus groups, and beta testing.</li>
+        <li>Implemented and scaled Sales & Marketing infrastructure (Salesforce, Hubspot, Pardot, Outreach, Ringcentral, Bizable).</li>
+        <li>Built custom inhouse BI Tool (Redshift, Rails, D3, Chartjs) and data infrastructure (Xplenty, Panoply) before transitioning to Looker.</li>
       </ul>
 
       <div style="height:20px;"></div>
 
       <!-- ElasticBox -->
 
-      <h4>ElasticBox</h4>
-      <p>Owned all growth initiatives in product, marketing and engineering, working cross functionally to acheive aggressive business objectives.</p>
+      <h3>Product Manager, Growth</h3>
+      <h4>ElasticBox <span class="subtext">(Acquired by Century Link)</span></h4>
+
+      <i class="fa fa-calendar-o"></i>
+      <span>&nbsp&nbsp</span>
+      <span>Oct '13 - Nov '14</span>
+      <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+      <i class="fa fa-map-marker"></i>
+      <span>&nbsp&nbsp</span>
+      <span>San Francisco</span>
+
+      <div style="height:10px;"></div>
+
       <ul>
-        <li>Planned and shipped features facilitating growth such as collaboration, onboarding, Docker integration and all in-product analytics or tests.</li>
-        <li>Owned all analytics products (Mixpanel, Google Analytics and Hubspot) to drive roadmap, monitor health, customer success, and end-to-end analysis.</li>
-        <li>Owned the ElasticBox website as a product manager and developer and worked with the Ops team to manage the entire website lifecycle.</li>
+        <li>Planned and shipped in-product collaboration model (think Google Docs for installer / infrastructure scripts) that would drive 10x growth in-organiztion growth.</li>
+        <li>Owned onboarding initiatives like tours, onboarding checklist and provider setup, driving a 30% onboarding conversion improvement by identifying points of friction.</li>
+        <li>Owned ElasticBox's website (design, messaging, development, conversion & lead capture) which was featured in Bootstrap Expo.</li>
+        <li>Partnered with Sales & Marketing organizaion to drive improvements in CLP and CaC on key channels (Events, Tradeshows, Content, Advertising) and created partnership with Docker that netted our second most valuable Customer.</li>
+        <li>Implemented Mixpanel in-product to report on customers usage to VP of Customer Success and drive adoption and retention analysis.</li>
       </ul>
 
       <div style="height:20px;"></div>
@@ -121,22 +132,214 @@ mixpanel.init("4273c2d8168867411eccd2942ed535fb");</script><!-- end Mixpanel -->
       <!-- ElasticBox -->
 
       <h3>Director, Product Manager</h3>
-      <h4>Seathos & ASR ltd</h4>
-      <p>Owned all growth initiatives in product, marketing and engineering, working cross functionally to acheive aggressive business objectives.</p>
-      <ul>
-        <li>Planned and shipped features facilitating growth such as collaboration, onboarding, Docker integration and all in-product analytics or tests.</li>
-        <li>Owned all analytics products (Mixpanel, Google Analytics and Hubspot) to drive roadmap, monitor health, customer success, and end-to-end analysis.</li>
-        <li>Owned the ElasticBox website as a product manager and developer and worked with the Ops team to manage the entire website lifecycle.</li>
-      </ul>
+      <h4>Sea•thos Foundation & ASR ltd <span class="subtext">(Acquired by Hands On Ventures)</span></h4>
 
+      <i class="fa fa-calendar-o"></i>
+      <span>&nbsp&nbsp</span>
+      <span>Mar '10 - Jun '12</span>
+      <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+      <i class="fa fa-map-marker"></i>
+      <span>&nbsp&nbsp</span>
+      <span>Los Angeles</span>
+
+      <div style="height:10px;"></div>
+
+      <ul>
+        <li>Planned and managed ocean debris simulation and research product which included research publication, partnership development and fundrasing with a 240K budget.</li>
+        <li>Helped fundraise 610K and launched Seathos, and Ocean Awareness foundation focused on reaserach and consumer educational technology.</li>
+        <li>Proposed and managed numerical modeling suite upgrade, refactoring and documentation project to sell software license with 75K budget.</li>
+        <li>Managed all collateral including website, fundraising materials, business development and partnership materials.</li>
+        <li>Managed team of 6 - 10 interns to build content marketing platform, drive social engagement and petition signups directed towards legislators.</li>
+      </ul>
     </div>
     <div class="col-lg-4 col-lg-offset-1">
-      <h5>Skills:</h5>
+      <h5 class="title">Core Skills:</h5>
+      <hr class="bold">
+
+      <h5>Product Management</h5>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 90%; height: 4px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h5>Performance Marketing</h5>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 90%; height: 4px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h5>Frontend Engineering</h5>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%; height: 4px;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h5>Backend Engineering</h5>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 40%; height: 4px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h5>UI/UX Design</h5>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 70%; height: 4px;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h5>Marketing / Sales Operations</h5>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%; height: 4px;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h5>Data Analysis</h5>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <div style="height:20px;"></div>
+
+      <h5 class="title">Most proud of:</h5>
+      <hr class="bold">
+
+      <h5>HoneyBook's growth</h5>
+      <p>from thousands of dollars in monthly transactions to tens of millions</p>
+
+      <h5>Building business</h5>
+      <p>from the ground up with Seathos foundation to transitioning a family business and putting it on track for 200% revenue growth in on year</p>
+
+      <h5>Surfing giant waves</h5>
+      <p>at famous big wave spot Mavericks and San Francisco's Ocean Beach. Over 15 years of training and dedication to be one of San Francisco's best surfers.</p>
+
+      <div style="height:20px;"></div>
+
+      <h5 class="title">TECH STACK:</h5>
+      <hr class="bold">
+
+      <!-- Engineering -->
+
+      <div class="stack-tags">
+        <button type="button" class="btn btn-default btn-xs">Ruby</button>
+        <button type="button" class="btn btn-default btn-xs">Ruby on Rails</button>
+        <button type="button" class="btn btn-default btn-xs">MongoDB</button>
+        <button type="button" class="btn btn-default btn-xs">Postress</button>
+        <button type="button" class="btn btn-default btn-xs">HTML5</button>
+        <button type="button" class="btn btn-default btn-xs">CSS3</button>
+        <button type="button" class="btn btn-default btn-xs">SCSS</button>
+        <button type="button" class="btn btn-default btn-xs">LESS</button>
+        <button type="button" class="btn btn-default btn-xs">Grunt</button>
+        <button type="button" class="btn btn-default btn-xs">Jekyll</button>
+        <button type="button" class="btn btn-default btn-xs">JQuery</button>
+        <button type="button" class="btn btn-default btn-xs">Angular</button>
+        <button type="button" class="btn btn-default btn-xs">React</button>
+        <button type="button" class="btn btn-default btn-xs">D3</button>
+        <button type="button" class="btn btn-default btn-xs">Chartjs</button>
+      </div>
       <hr>
+
+      <!-- Data -->
+
+      <div class="stack-tags">
+        <button type="button" class="btn btn-default btn-xs">Mixpanel</button>
+        <button type="button" class="btn btn-default btn-xs">Google Analytics</button>
+        <button type="button" class="btn btn-default btn-xs">Redshift</button>
+        <button type="button" class="btn btn-default btn-xs">SQL</button>
+        <button type="button" class="btn btn-default btn-xs">Looker</button>
+        <button type="button" class="btn btn-default btn-xs">Excel</button>
+        <button type="button" class="btn btn-default btn-xs">Google Sheets</button>
+      </div>
+      <hr>
+
+      <!-- Marketing & Sales -->
+
+      <div class="stack-tags">
+        <button type="button" class="btn btn-default btn-xs">Salesforce</button>
+        <button type="button" class="btn btn-default btn-xs">Optimizely</button>
+        <button type="button" class="btn btn-default btn-xs">Hubspot</button>
+        <button type="button" class="btn btn-default btn-xs">Pardot</button>
+        <button type="button" class="btn btn-default btn-xs">Outreach</button>
+        <button type="button" class="btn btn-default btn-xs">Business Manager</button>
+        <button type="button" class="btn btn-default btn-xs">Adwords</button>
+        <button type="button" class="btn btn-default btn-xs">Google Sheets</button>
+      </div>
+
+      <hr>
+      <!-- Design-->
+
+      <div class="stack-tags">
+        <button type="button" class="btn btn-default btn-xs">Photoshop</button>
+        <button type="button" class="btn btn-default btn-xs">Illustrator</button>
+        <button type="button" class="btn btn-default btn-xs">Sketch</button>
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-11">
+      <div style="height:20px;"></div>
+      <h5 class="title">In Any given week I spend my time:</h5>
+      <hr class="bold">
+      <div style="height:10px;"></div>
+      <div class="col-lg-4">
+
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="col-lg-4">
+        <div class="legend product"></div>
+        <p>Most of my time is dedicated to product; planning, advocating, collaborating and removing blockers.</p>
+        <div class="legend marketing"></div>
+        <p>Marketing should be seen as an extension of product and a partner in driving growth and conversion.</p>
+        <div class="legend engineering"></div>
+        <p>Engineering keeps me sharp, gives me a leg up on building relationships with engineers and ensures I know the prodcut inside out.</p>
+      </div>
+      <div class="col-lg-4">
+        <div class="legend analysis"></div>
+        <p>Understanding a businesses' KPIs, where the data comes from and how to get it is critical to success in driving growth.</p>
+        <div class="legend mentoring"></div>
+        <p>Getting things done in a startup is all about relationships. Regarless of experience level, everyone has something to learn and I make sure to dedicate time specifically to getting to know my peers and helping them develop as individuals.</p>
+      </div>
+
     </div>
   </div>
 
 </div>
+<script type="text/javascript">
+var ctx = document.getElementById("myChart").getContext("2d");
+var data = {
+  labels: [
+      "Mentoring",
+      "Analysis",
+      "Engineering",
+      "Marketing",
+      "Product"
+  ],
+  datasets: [
+      {
+          data: [10, 10, 20, 20, 40],
+          backgroundColor: [
+              "#3F576B",
+              "#1F486B",
+              "#347BB8",
+              "#439DEB",
+              "#8BC0EE"
+          ],
+          hoverBackgroundColor: [
+              "#3F576B",
+              "#1F486B",
+              "#347BB8",
+              "#439DEB",
+              "#8BC0EE"
+          ]
+      }]
+};
+var options = {
+    responsive: true,
+    legend: {
+      display: false
+    }
+
+};
+var chartInstance = new Chart(ctx, {
+    type: 'doughnut',
+    data: data,
+    options: options
+});
+</script>
 
   </body>
 </html>

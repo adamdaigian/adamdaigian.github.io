@@ -1,14 +1,21 @@
 body{
   margin: 0;
   padding: 0;
-  overflow: hidden;
   height: 100%;
   background: #1E2630;
   color: #fff;
+  font-family: "proxima-nova", helvetica-neue, helvetica, sans-serif;
 }
 
 body.resume {
   overflow: scroll;
+  background: #fff;
+  color: #1E2630;
+}
+
+
+body.resume h4 {
+  color: #439DEB;
 }
 
 canvas{
@@ -18,7 +25,7 @@ canvas{
 
 .contact-container {
   position: absolute;
-  margin-top: 10%;
+  margin-top: 20%;
   width: 100%;
 }
 
@@ -34,9 +41,14 @@ canvas{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-h1,h2,h3,p,li {
-  font-weight: lighter;
-  letter-spacing: 1px;
+h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h2,h3,p,li {
+  font-weight: 300;
+  /*letter-spacing: 1px;*/
   line-height: 1.6;
 }
 
@@ -44,9 +56,17 @@ ul {
   -webkit-padding-start: 20px;
 }
 
-/*p,li {
-  line-height: 2;
-}*/
+hr.bold {
+  border-top: 4px solid #eee
+}
+
+.progress-bar {
+  background-color: #439DEB;
+}
+
+.progress {
+  height: 4px;
+}
 
 a {
   color: #439DEB;
@@ -59,10 +79,56 @@ a:hover {
   color: #439DEB;
 }
 
-.20 {
-  height: 20px;
+.title {
+  text-transform: uppercase;
 }
 
-.40 {
-  height: 40px;
+h4 span.subtext {
+  color: #1E2630;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+h1.resume-title {
+  font-size: 50px;
+}
+
+.stack-tags button {
+  margin: 0 4px 10px 0;
+  cursor: default;
+}
+
+.stack-tags button:hover,
+.stack-tags button:focus,
+.stack-tags button:active {
+  background: transparent;
+  outline: 0;
+}
+
+.legend {
+  display: block;
+  height: 10px;
+  width: 40px;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.legend.product {
+  background-color: #8BC0EE;
+}
+
+.legend.marketing {
+  background-color: #439DEB;
+}
+
+.legend.engineering {
+  background-color: #347BB8;
+}
+
+.legend.analysis {
+  background-color: #1F486B;
+}
+
+.legend.mentoring {
+  background-color: #3F576B;
 }
