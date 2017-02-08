@@ -69,6 +69,9 @@
       <div style="height:40px;"></div>
 
     </div>
+    <div class="col-lg-4 col-lg-offset-1">
+      <img style="height:140px;width:140px;border-radius:100%;margin-top:20px;float:right;" src="https://pbs.twimg.com/profile_images/829034749171621888/nvZotXlS.jpg" alt="" />
+    </div>
 
   </div>
   <div class="row">
@@ -277,21 +280,27 @@
 
         <canvas id="myChart"></canvas>
       </div>
-      <div class="col-lg-4">
-        <div class="legend product"></div>
-        <p>Most of my time is dedicated to product; planning, advocating, collaborating and removing blockers.</p>
-        <div class="legend marketing"></div>
-        <p>Marketing should be seen as an extension of product and a partner in driving growth and conversion.</p>
-        <div class="legend engineering"></div>
-        <p>Engineering keeps me sharp, gives me a leg up on building relationships with engineers and ensures I know a product inside out.</p>
+      <div class="chart-explanation">
+        <div class="col-lg-4">
+          <div class="legend product"></div>
+          <h5 class="legend-title">Product Management</h5>
+          <p>Most of my time is dedicated to product; planning, advocating, collaborating and removing blockers.</p>
+          <div class="legend marketing"></div>
+          <h5 class="legend-title">Marketing</h5>
+          <p>Marketing should be seen as an extension of product and a partner in driving growth and conversion.</p>
+          <div class="legend engineering"></div>
+          <h5 class="legend-title">Engineering</h5>
+          <p>Engineering is one of my favorite challenges and helps me build relationships with engineers. It doesn't hurt to know a product inside out.</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="legend analysis"></div>
+          <h5 class="legend-title">Analysis</h5>
+          <p>Understanding business KPIs, where data comes, and how to get it is critical to success in driving growth and deeply understanding funnels.</p>
+          <div class="legend mentoring"></div>
+          <h5 class="legend-title">Mentorship</h5>
+          <p>To be effective in a startup, you have to have solid relationships. I dedicate time to getting to know my peers or direct reports and help them develop any way I can.</p>
+        </div>
       </div>
-      <div class="col-lg-4">
-        <div class="legend analysis"></div>
-        <p>Understanding business KPIs, where data comes, and how to get it is critical to success in driving growth and deeply understanding funnels.</p>
-        <div class="legend mentoring"></div>
-        <p>Getting things done in a startup is all about relationships. I make sure to dedicate time specifically to getting to know my peers or direct reports and help them develop as individuals.</p>
-      </div>
-
     </div>
   </div>
 
@@ -308,20 +317,20 @@ var data = {
   ],
   datasets: [
       {
-          data: [10, 10, 20, 20, 40],
+          data: [40, 20, 20, 10, 10],
           backgroundColor: [
-              "#3F576B",
-              "#1F486B",
-              "#347BB8",
+              "#8BC0EE",
               "#439DEB",
-              "#8BC0EE"
+              "#347BB8",
+              "#1F486B",
+              "#3F576B"
           ],
           hoverBackgroundColor: [
-              "#3F576B",
-              "#1F486B",
-              "#347BB8",
+              "#8BC0EE",
               "#439DEB",
-              "#8BC0EE"
+              "#347BB8",
+              "#1F486B",
+              "#3F576B"
           ]
       }]
 };
