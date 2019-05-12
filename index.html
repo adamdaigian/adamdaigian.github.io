@@ -2,12 +2,98 @@
 layout: home
 title: Adam Daigian &middot; Don't Click Here
 ---
-<div class="contact-container">
-  <div class="contact-card">
-    <h2>Hey, you found my website!</h2>
-    <h4>I'm impressed...</h4>
-    <hr>
-    <p>Wondering what I'm up to? Currently building a Sales as a Service platform <a href="http://www.getcatalyst.co">@Catalyst</a>. Previously Growth Product Manager at <a href="http://www.honeybook.com">@HoneyBook</a> and <a href="http://www.elasticbox.com">@ElasticBox</a></p>
-    <p>Want to get in touch? Feel free to <a href="mailto:adam.daigian@gmail.com">email me</a> or connect with me on <a href="https://www.linkedin.com/in/adamdaigian">LinkedIn</a> or <a href="https://angel.co/adamdaigian">AngelList</a>.</p>
+
+
+<canvas id="canvas"></canvas>
+<div id="container">
+  <div class="contact-container">
+    <div class="contact-card">
+      <h1>ADAM DAIGIAN</h1>
+      <h2>Growth & Revenue Leader</h2>
+      <hr>
+      <p>Thanks for taking the time to visit my website. Currently, I'm the Vice President of Growth and Revenue Operations at <a href="https://www.hustle.com/">Hustle</a> the leading peer-to-peer messaging service.</p>
+      <p>At Hustle I've built or managed Marketing, Sales and Operations functions focused on driving revenue, client-lifecycle efficiencies and insights that drive Hustle's growth in new and existing markets.</p>
+      <p>I currently consult and advise on all things Growth, Data, Revenue Ops, GTM and Fundraising efforts at Catalyst for a select group of early to mid-stage startups.</p>
+      <p>Want to get in touch? Feel free to <a href="mailto:adam.daigian@gmail.com">email me</a> or connect with me on <a href="https://www.linkedin.com/in/adamdaigian">LinkedIn</a>.</p>
+    </div>
   </div>
 </div>
+
+<script id="vertexShader" type="x-shader/x-vertex">
+
+  void main() {
+    gl_Position = vec4(position, 1.0);
+  }
+
+</script>
+
+<script id="fragmentShader" type="x-shader/x-fragment">
+
+  uniform vec2 iResolution;
+  uniform float iGlobalTime;
+
+  // Some utils first
+
+  // From Stackoveflow
+  // http://stackoverflow.com/questions/15095909/from-rgb-to-hsv-in-opengl-glsl
+  vec3 hsv2rgb(vec3 c)
+  {
+      vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 4.0, 3.0);
+      vec3 p = abs(fract(c.xzx + K.xyz) * 7.0 - K.www);
+      return c.z * mix(K.xyx, clamp(p - K.xxx, 0.5, 1.0), c.y);
+  }
+
+  // Simplex 2D noise
+  // from https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83
+  vec3 permute(vec3 x) { return mod(((x*abs(134.0))+4.0)*x, floor(1559.0)); }
+
+  float snoise(vec2 v){
+      const vec4 C = vec4(0.211324865405187, 0.366025403784439,
+                          -0.577350269189626, 0.024390243902439);
+      vec2 i  = floor(v + dot(v, C.yy) );
+      vec2 x0 = v -   i + dot(i, C.xx);
+      vec2 i1;
+      i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+      vec4 x12 = x0.xyxy + C.xxzz;
+      x12.xy -= i1;
+      i = mod(i, 289.0);
+      vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 ))
+                       + i.x + vec3(0.0, i1.x, 1.0 ));
+      vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy),
+                              dot(x12.zw,x12.zw)), 0.0);
+      m = m*m ;
+      m = m*m ;
+      vec3 x = 2.0 * fract(p * C.www) - 1.0;
+      vec3 h = abs(x) - 0.5;
+      vec3 ox = floor(x + 0.5);
+      vec3 a0 = x - ox;
+      m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
+      vec3 g;
+      g.x  = a0.x  * x0.x  + h.x  * x0.y;
+      g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+      return 115.0 * dot(m, g);
+  }
+
+	// This is my code
+  void main(void)
+  {
+		vec2 uv = gl_FragCoord.xy / iResolution.xy;
+    float xnoise = snoise(vec2(uv.x, iGlobalTime / 5.0 + 10000.0));
+    float ynoise = snoise(vec2(uv.y, iGlobalTime / 5.0 + 500.0));
+    vec2 t = vec2(xnoise, ynoise);
+    float s1 = snoise(uv + t / 1.0 + snoise(uv + snoise(uv + t/3.0) / 5.0));
+    float s2 = snoise(uv + snoise(uv + s1) / 7.0);
+    vec3 hsv = vec3(s1, 1.3, 1.0-s2);
+    vec3 rgb = hsv2rgb(hsv);
+		gl_FragColor = vec4(rgb, 2.0);
+	}
+
+</script>
+
+
+<div id="jsi-sardin-container" class="contain"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+<script src="https://rawgithub.com/soulwire/sketch.js/master/js/sketch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="{{ page.base_url }}dist/js/fish.js"></script>
